@@ -1,7 +1,7 @@
 {
   "name": "@anyaudio/sdk",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Software Development Kit for AnyAudio",
   "keywords": [
     "anyaudio",
@@ -17,7 +17,7 @@
     "webpack-cli": "^3.1.2"
   },
   "scripts": {
-    "build": "webpack -p --mode=production"
+    "build": "webpack -p"
   },
   "dependencies": {
     "axios": "^0.18.0"
@@ -25,5 +25,8 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "files": [
+    "build"
+  ]
 }
