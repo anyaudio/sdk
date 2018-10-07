@@ -5,5 +5,5 @@ export default class extends APIBase {
     super(baseURL, '/api/v1');
   }
 
-  search = query => this.networkClient.get('/search', { q: query });
+  search = query => this.networkClient.get('/search', { params: { q: query } });
 }
