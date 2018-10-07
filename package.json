@@ -1,7 +1,7 @@
 {
   "name": "@anyaudio/sdk",
   "private": false,
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Software Development Kit for AnyAudio",
   "keywords": [
     "anyaudio",
@@ -13,18 +13,24 @@
     "@babel/preset-env": "^7.1.0",
     "babel-loader": "^8.0.4",
     "babel-preset-es2015": "^6.24.1",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "rollup": "^0.66.4",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-commonjs": "^9.1.8",
+    "rollup-plugin-eslint": "^5.0.0",
     "rollup-plugin-json": "^3.1.0",
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^1.6.2",
+    "uglify-es": "mishoo/UglifyJS2#harmony",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "lint": "eslint ."
   },
   "dependencies": {
     "axios": "^0.18.0"
