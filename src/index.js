@@ -1,13 +1,10 @@
-import { getApiByVersion } from './apiUtils';
+import apiV1 from './v1';
 
-export default class AnyAudioSDK {
-  constructor(baseURL, apiVersion=1) {
+export default class {
+  constructor(baseURL) {
     this.baseURL = baseURL;
-    this.setApi(apiVersion);
-  }
-
-  setApi = apiVersion => {
-    this.apiVersion = apiVersion;
-    this.api = getApiByVersion(this.apiVersion)(this.baseURL);
+    this.api = {
+      v1: new apiV1(baseURL),
+    };
   }
 }

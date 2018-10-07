@@ -1,6 +1,6 @@
-import { ApiBase } from '../apiUtils';
+import APIBase from '../api/APIBase';
 
-export default class extends ApiBase {
+export default class extends APIBase {
   constructor(baseURL) {
     super(baseURL, '/api/v1');
   }
